@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>FastFood</title>
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/order.css">
+	<meta charset="utf-8">	
+</head>
+<body>
+	<header>
+		<div class="container-fluid bg-dark">
+			<div class="container">
+				<h3 class="text-light font-italic mb-0">Fast Food</h3>
+			</div>
+		</div>
+	</header>
+	<main>
+	 <div class="container-fluid" style="background-image:linear-gradient(to top,#5b5a5a 0%,#8e8d8d 100%)">
+		<div class="row">
+			<div class="col-sm-8 mt-3 mb-3" id="listfood">
+				<div class="card float-left ml-2 shadow mt-3" style="width:19em">
+					<img src="images/sp_1.jpg" class="card-img" height="">
+					<div class="card-footer">
+						<h5 class="card-title">Hamburger</h5>
+						<h6>Price: <span>5$</span></h6>
+						<input type="number" min="1" max="100" value="1" style="width:3em">
+						<button class="btn btn-primary col-sm-6" style="float: right" onclick="orderFood(this,0)">Order</button>
+					</div>
+				</div>
+				<div class="card float-left ml-2 shadow mt-3" style="width:19em" >
+					<img src="images/sp_2.jpg" class="card-img" >
+					<div class="card-footer">
+						<h5 class="card-title">Pizza</h5>
+						<h6>Price: <span>12$</span></h6>
+						<input type="number" min="1" max="100" value="1" style="width:3em">
+						<button class="btn btn-primary col-sm-6" style="float: right" onclick="orderFood(this,0)">Order</button>
+					</div>
+				</div>
+				<div class="card float-left ml-2 shadow mt-3" style="width:19em">
+					<img src="images/sp_3.jpg" class="card-img" >
+					<div class="card-footer">
+						<h5 class="card-title">Fried Chicken</h5>
+						<h6>Price: <span>10$</span></h6>
+						<input type="number" min="1" max="100" value="1" style="width:3em">
+						<button class="btn btn-primary col-sm-6" style="float: right" onclick="orderFood(this,0)">Order</button>
+					</div>
+				</div>
+				<div class="card float-left ml-2 shadow mt-3" style="width:19em">
+					<img src="images/sp_4.jpg" class="card-img" >
+					<div class="card-footer">
+						<h5 class="card-title">Potato chip</h5>
+						<h6>Price: <span>3$</span></h6>
+						<input type="number" min="1" max="100" value="1" style="width:3em">
+						<button class="btn btn-primary col-sm-6" style="float: right" onclick="orderFood(this,0)">Order</button>
+					</div>
+				</div>
+				<div class="card float-left ml-2 shadow mt-3" style="width:19em">
+					<img src="images/sp_5.jpg" class="card-img" >
+					<div class="card-footer">
+						<h5 class="card-title">Donut</h5>
+						<h6>Price: <span>8$</span></h6>
+						<input type="number" min="1" max="100" value="1" style="width:3em">
+						<button class="btn btn-primary col-sm-6" style="float: right" onclick="orderFood(this,0)">Order</button>
+					</div>
+				</div>
+				<div class="card float-left ml-2 shadow mt-3" style="width:19em">
+					<img src="images/sp_6.jpg" class="card-img" >
+					<div class="card-footer">
+						<h5 class="card-title">Ring Cookie</h5>
+						<h6>Price: <span>2.5$</span></h6>
+						<input type="number" min="1" max="100" value="1" style="width:3em">
+						<button class="btn btn-primary col-sm-6" style="float: right" onclick="orderFood(this,0)">Order</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 mt-3">
+				<table class="table text-light">
+					<thead class="">
+						<th>Product</th>
+						<th>Amount</th>
+						<th>Price</th>
+						<th></th>
+					</thead>
+					<tbody id="table_price" class="table-borderless">
+					</tbody>
+					<tfoot id="sumfood">
+						<th>Total:</th>
+						<th colspan="3" class="text-center"></th>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	 </div>
+	</main>
+	<script src="js/order.js"></script>
+</body>
